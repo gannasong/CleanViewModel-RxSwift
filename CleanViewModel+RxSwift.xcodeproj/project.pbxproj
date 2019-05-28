@@ -12,6 +12,9 @@
 		49344974229C5A18004ADB54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49344973229C5A18004ADB54 /* Assets.xcassets */; };
 		49344977229C5A18004ADB54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49344975229C5A18004ADB54 /* LaunchScreen.storyboard */; };
 		49344982229C5A18004ADB54 /* CleanViewModel_RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49344981229C5A18004ADB54 /* CleanViewModel_RxSwiftTests.swift */; };
+		4934498D229C628E004ADB54 /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934498C229C628E004ADB54 /* ViewModelType.swift */; };
+		4934498F229C62F8004ADB54 /* GNViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934498E229C62F8004ADB54 /* GNViewModel.swift */; };
+		49344995229CC1A7004ADB54 /* GNView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49344994229CC1A7004ADB54 /* GNView.swift */; };
 		5F7D9B257A539D4BB7A277ED /* Pods_CleanViewModel_RxSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A9BF36CF4B94B3129A2D3A6 /* Pods_CleanViewModel_RxSwiftTests.framework */; };
 		D50A49AB2320687C594200AE /* Pods_CleanViewModel_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12BE95D870F9D4B5164EBE33 /* Pods_CleanViewModel_RxSwift.framework */; };
 /* End PBXBuildFile section */
@@ -39,6 +42,9 @@
 		4934497D229C5A18004ADB54 /* CleanViewModel+RxSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CleanViewModel+RxSwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49344981229C5A18004ADB54 /* CleanViewModel_RxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CleanViewModel_RxSwiftTests.swift; sourceTree = "<group>"; };
 		49344983229C5A18004ADB54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4934498C229C628E004ADB54 /* ViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
+		4934498E229C62F8004ADB54 /* GNViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNViewModel.swift; sourceTree = "<group>"; };
+		49344994229CC1A7004ADB54 /* GNView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GNView.swift; sourceTree = "<group>"; };
 		4CC7071B9F4570B5E4C3AC3A /* Pods-CleanViewModel+RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanViewModel+RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-CleanViewModel+RxSwift/Pods-CleanViewModel+RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		B17CFB5C91753934E2E04389 /* Pods-CleanViewModel+RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanViewModel+RxSwift.release.xcconfig"; path = "Target Support Files/Pods-CleanViewModel+RxSwift/Pods-CleanViewModel+RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 		B37289E090988FDB1A7A374F /* Pods-CleanViewModel+RxSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CleanViewModel+RxSwiftTests.release.xcconfig"; path = "Target Support Files/Pods-CleanViewModel+RxSwiftTests/Pods-CleanViewModel+RxSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,8 +93,11 @@
 		4934496B229C5A17004ADB54 /* CleanViewModel+RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				49344993229CC18B004ADB54 /* View */,
+				49344992229CC154004ADB54 /* ViewController */,
+				49344991229CC144004ADB54 /* Model */,
+				49344990229CC12A004ADB54 /* Protocol */,
 				4934496C229C5A17004ADB54 /* AppDelegate.swift */,
-				4934496E229C5A17004ADB54 /* ViewController.swift */,
 				49344973229C5A18004ADB54 /* Assets.xcassets */,
 				49344975229C5A18004ADB54 /* LaunchScreen.storyboard */,
 				49344978229C5A18004ADB54 /* Info.plist */,
@@ -103,6 +112,38 @@
 				49344983229C5A18004ADB54 /* Info.plist */,
 			);
 			path = "CleanViewModel+RxSwiftTests";
+			sourceTree = "<group>";
+		};
+		49344990229CC12A004ADB54 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4934498C229C628E004ADB54 /* ViewModelType.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		49344991229CC144004ADB54 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4934498E229C62F8004ADB54 /* GNViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		49344992229CC154004ADB54 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4934496E229C5A17004ADB54 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		49344993229CC18B004ADB54 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				49344994229CC1A7004ADB54 /* GNView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		4D6BD5004EA91DD5A721575F /* Pods */ = {
@@ -300,7 +341,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4934496F229C5A17004ADB54 /* ViewController.swift in Sources */,
+				49344995229CC1A7004ADB54 /* GNView.swift in Sources */,
+				4934498F229C62F8004ADB54 /* GNViewModel.swift in Sources */,
 				4934496D229C5A17004ADB54 /* AppDelegate.swift in Sources */,
+				4934498D229C628E004ADB54 /* ViewModelType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
